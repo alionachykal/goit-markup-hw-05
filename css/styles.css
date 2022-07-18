@@ -193,6 +193,8 @@ margin-left: 0;
     
      .icon-mail, .icon-phone{
         margin-right: 10px;
+        transition-property: fill 250ms var(--timing-function);
+        
     }
     .icon-mail{
         fill: currentColor;
@@ -259,7 +261,7 @@ margin-left: 0;
      padding-top: 32px;
      padding-bottom: 32px;
      position: relative;
-    transition: 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
 }
 .link2::after{
     content: '';
@@ -295,7 +297,8 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
      position: relative;
-    transition: opacity 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
+    
     }
     .resume::after{
         content: '';
@@ -330,7 +333,7 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-    transition: opacity 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
 }
 .resume2::after{
     content: '';
@@ -363,7 +366,7 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-    transition: opacity 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
     }
 .contacts::after{
     content: '';
@@ -395,7 +398,7 @@ margin-left: 0;
     line-height: 1.14;
     padding-top: 32px;
      padding-bottom: 32px;
-    transition: opacity 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
 }
    
 
@@ -436,7 +439,7 @@ margin-left: 0;
     display: flex;
     align-items: center;
     position: relative;
-    transition: 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
     }
     /* .number::after{
         content: '';
@@ -771,7 +774,7 @@ column-gap: 30px;
     border:none;
     cursor: pointer;
     height: 50px;
-    transition: 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
    
     
    
@@ -806,7 +809,7 @@ ul{
         text-align: center;
         letter-spacing: 0.03em;
         cursor: pointer;   
-        transition: 250ms var(--timing-function);
+        transition-property: background-color, color, box-shadow 250ms var(--timing-function);
     
 }
 .button-list:hover,
@@ -836,7 +839,7 @@ ul{
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
-    transition: 250ms var(--timing-function);
+    transition-property: box-shadow 250ms var(--timing-function);
     
 
 
@@ -878,7 +881,7 @@ padding: 60px 0;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    transition: 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
     
 }
 .footer-mail:hover,
@@ -893,7 +896,7 @@ padding: 60px 0;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: 250ms var(--timing-function);
+    transition-property: color 250ms var(--timing-function);
     
     
    
@@ -943,7 +946,7 @@ padding: 60px 0;
  .offers-link{
     cursor: pointer;
     text-decoration: none;
-    transition: 250ms var(--timing-function);
+    transition-property:box-shadow 250ms var(--timing-function);
 } 
  .offers-link:hover,
 .offers-link:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -994,7 +997,9 @@ padding: 60px 0;
    width: 106px;
    height: 60px;
    fill: #AFB1B8;
-} 
+    transition-property: fill 250ms var(--timing-function);
+    }
+
  /* .clients-icon:hover,
 .clients-icon:focus{
     fill: var(--primary-bcg-accent-color)
@@ -1007,7 +1012,7 @@ padding: 60px 0;
      border-radius: 4px;
      width: 170px;
     height: 92px;
-    transition: 250ms var(--timing-function);
+    transition-property: border-color, fill 250ms var(--timing-function);
 }
 
 .clients-link:hover .clients-icon{
@@ -1056,12 +1061,12 @@ padding: 60px 0;
     border-radius: 50%;
     color: #AFB1B8;
     cursor: pointer;
-    transition: 250ms var(--timing-function);
+    transition-property: background-color 250ms var(--timing-function);
     
 }
   .socials-link:hover,
   .socials-link:focus {
-    color: var(--primary-bcg-color);
+    /* color: var(--primary-bcg-color); */
      background-color: var(--accent-color); 
 } 
  .socials-link:hover .social-icon{
@@ -1091,6 +1096,9 @@ li.socials-item {
      align-items: center;
     line-height: 30px;
     display: inline-block;
+    transition-property: fill 250ms var(--timing-function);
+
+
 }
 /* .social-icon:hover,:focus { 
     background-color: var(--primary-bcg-accent-color);
@@ -1112,7 +1120,7 @@ li.socials-item {
     color:var(--primary-bcg-color);
     justify-content: center;
     align-items: center;
-    transition: 250ms var(--timing-function);
+    transition-property: background-color 250ms var(--timing-function);
 
 }
 /* modalka */
@@ -1124,11 +1132,12 @@ li.socials-item {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--timing-function) ;
+    transition: opacity, visibility  250ms var(--timing-function);
 
 }
  .backdrop.is-hidden{
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 } 
 .backdrop.is-hidden .modal{
@@ -1142,8 +1151,8 @@ li.socials-item {
     background-color: var(--primary-bcg-color);
     width: 528px;
     height: 581px;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--timing-function);
+    transform: translate(-50%, -50%);
+    transition: 250ms var(--timing-function);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }

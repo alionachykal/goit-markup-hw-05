@@ -193,7 +193,7 @@ margin-left: 0;
     
      .icon-mail, .icon-phone{
         margin-right: 10px;
-        transition-property: fill 250ms var(--timing-function);
+        transition: fill 250ms var(--timing-function);
         
     }
     .icon-mail{
@@ -261,7 +261,7 @@ margin-left: 0;
      padding-top: 32px;
      padding-bottom: 32px;
      position: relative;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .link2::after{
     content: '';
@@ -297,7 +297,7 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
      position: relative;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     
     }
     .resume::after{
@@ -333,7 +333,7 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .resume2::after{
     content: '';
@@ -366,7 +366,7 @@ margin-left: 0;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     }
 .contacts::after{
     content: '';
@@ -398,7 +398,7 @@ margin-left: 0;
     line-height: 1.14;
     padding-top: 32px;
      padding-bottom: 32px;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
    
 
@@ -439,7 +439,7 @@ margin-left: 0;
     display: flex;
     align-items: center;
     position: relative;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     }
     /* .number::after{
         content: '';
@@ -774,7 +774,7 @@ column-gap: 30px;
     border:none;
     cursor: pointer;
     height: 50px;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
    
     
    
@@ -808,8 +808,9 @@ ul{
         border: 1 solid transparent;
         text-align: center;
         letter-spacing: 0.03em;
-        cursor: pointer;   
-        transition-property: background-color, color, box-shadow 250ms var(--timing-function);
+        cursor: pointer;  
+        transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function);
     
 }
 .button-list:hover,
@@ -839,7 +840,7 @@ ul{
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
-    transition-property: box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
     
 
 
@@ -881,7 +882,7 @@ padding: 60px 0;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     
 }
 .footer-mail:hover,
@@ -896,7 +897,7 @@ padding: 60px 0;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition-property: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     
     
    
@@ -911,7 +912,7 @@ padding: 60px 0;
     font-style: normal;
     text-decoration: none;
    letter-spacing: 0.03em;
-   /* transition: 250ms var(--timing-function); */
+   
 
 }
 .section.portfolio{
@@ -946,7 +947,7 @@ padding: 60px 0;
  .offers-link{
     cursor: pointer;
     text-decoration: none;
-    transition-property:box-shadow 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
 } 
  .offers-link:hover,
 .offers-link:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -963,7 +964,7 @@ padding: 60px 0;
     overflow: hidden;
 }
 .offers-thump:hover .overlay{
-    transform: translateY(0%)
+    transform: translateY(0%);
 
 }
 .overlay{ 
@@ -997,7 +998,7 @@ padding: 60px 0;
    width: 106px;
    height: 60px;
    fill: #AFB1B8;
-    transition-property: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
     }
 
  /* .clients-icon:hover,
@@ -1012,7 +1013,7 @@ padding: 60px 0;
      border-radius: 4px;
      width: 170px;
     height: 92px;
-    transition-property: border-color, fill 250ms var(--timing-function);
+    transition: border-color 250ms var(--timing-function);
 }
 
 .clients-link:hover .clients-icon{
@@ -1061,7 +1062,7 @@ padding: 60px 0;
     border-radius: 50%;
     color: #AFB1B8;
     cursor: pointer;
-    transition-property: background-color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
     
 }
   .socials-link:hover,
@@ -1096,7 +1097,7 @@ li.socials-item {
      align-items: center;
     line-height: 30px;
     display: inline-block;
-    transition-property: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 
 
 }
@@ -1120,7 +1121,7 @@ li.socials-item {
     color:var(--primary-bcg-color);
     justify-content: center;
     align-items: center;
-    transition-property: background-color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 
 }
 /* modalka */
@@ -1132,7 +1133,7 @@ li.socials-item {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity, visibility  250ms var(--timing-function);
+    transition: opacity 250ms var(--timing-function), visibility  250ms var(--timing-function);
 
 }
  .backdrop.is-hidden{
